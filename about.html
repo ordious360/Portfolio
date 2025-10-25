@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me | Muhammad Shahyan Khalid</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"> 
+<style>
+    * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif;}
+    body {background: linear-gradient(135deg, #1e1e2f, #2e2e42); color: #e4e4e4;}
+    header {text-align: center; padding: 50px 20px; background: #12121a; box-shadow: 0 4px 15px rgba(0,0,0,0.4);}
+    header h1 {font-size: 2.5em; color: #00bcd4;}
+    header p {color: #ccc; margin-top: 10px;}
+
+    nav {text-align: center; margin: 20px 0;}
+    nav a {
+        color: #fff; text-decoration: none; margin: 0 15px; font-weight: 500; transition: color 0.3s;
+    }
+    nav a:hover {color: #00bcd4;}
+
+    section {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 30px;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 15px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        backdrop-filter: blur(10px);
+        animation: fadeUp 1s ease forwards;
+        opacity: 0;
+    }
+
+    h2 {
+        color: #00bcd4;
+        border-bottom: 2px solid #00bcd4;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+    ul {list-style: none; margin-top: 15px;}
+    ul li {margin-bottom: 8px;}
+
+    /* GALLERY SECTION */
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .gallery-item {
+        position: relative;
+        width: 200px;
+        height: 130px;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        transition: transform 0.3s ease;
+    }
+
+    .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover {
+        transform: scale(1.05);
+    }
+
+    .gallery-item:hover img {
+        transform: scale(1.1);
+        filter: brightness(70%);
+    }
+
+    .caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 8px 0;
+        text-align: center;
+        color: #fff;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+        font-weight: 600;
+        font-size: 1em;
+        letter-spacing: 0.5px;
+        transition: opacity 0.3s ease;
+        opacity: 1;
+    }
+
+    iframe {
+        width: 100%;
+        height: 380px;
+        border-radius: 15px;
+        border: none;
+        margin-top: 15px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background: #12121a;
+        color: #fff;
+        margin-top: 40px;
+        box-shadow: 0 -3px 10px rgba(0,0,0,0.4);
+    }
+
+    @keyframes fadeUp {
+        from {opacity: 0; transform: translateY(30px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>About Me</h1>
+    <p>Get to know me beyond coding 👇</p>
+</header>
+
+<nav>
+    <a href="index.html">🏠 Home</a>
+    <a href="#shows">🎬 Favorite Shows</a>
+    <a href="#travel">🌍 Travel</a>
+    <a href="#spotify">🎧 Playlist</a>
+    <a href="#contact">💬 Connect</a>
+</nav>
+
+<section id="intro">
+    <h2>Who I Am</h2>
+    <p>Hi, I’m <b>Shahyan</b> — a software engineering student passionate about technology and creativity. I love building practical, elegant solutions with code and exploring new ideas that push my boundaries. When I’m not coding, you’ll probably find me reading manga, hiking somewhere scenic, or listening to music on loop.</p>
+</section>
+
+<section id="shows">
+    <h2>🎬 My Favorite TV Shows / Movies & Anime</h2>
+    <ul>
+        <li>One Piece</li>
+        <li>Inception</li>
+        <li>FRIENDS</li>
+        <li>Interstellar</li>
+        <li>Game of Thrones</li>
+    </ul>
+</section>
+
+<section id="travel">
+    <h2>🌍 Places I’ve Visited</h2>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRYE7uy_ZSnibiWuYrQyKLaNThjLFvV8pJPXjAvL4uUtG9U9SKRbFX3L1baHMqopv2k9CP1u-abx0ftoyaoWts3gOg&s=19" alt="Swat Valley">
+            <div class="caption">Swat Valley</div>
+        </div>
+        <div class="gallery-item">
+            <img src="murree.jpg" alt="Murree Hills">
+            <div class="caption">Murree Hills</div>
+        </div>
+        <div class="gallery-item">
+            <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcRU9UMXNq1n-WKUmkACKBkcTrgg1FcEKEF3f75bHnce33tAC-YbjxQr8aZRWqFP9lUh7eo7WUrrQ6V0EVUTW_iPIaM&s=19" alt="Abbottabad">
+            <div class="caption">Abbottabad</div>
+        </div>
+        <div class="gallery-item">
+            <img src="IMG_7925.jpg" alt="Kumrat Valley">
+            <div class="caption">Kumrat Valley</div>
+        </div>
+    </div>
+</section>
+
+<section id="spotify">
+    <h2>🎧 My Spotify Playlist</h2>
+    <p>Here’s what I listen to while I code and unwind — feel free to check it out!</p>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0uFcnIFup9N59n55AazU8S?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</section>
+
+<section id="contact">
+    <h2>💬 Let’s Connect</h2>
+    <p>Want to collaborate or just say hi? You can reach me on khalidshahyan0@gmail.com or connect on <a href="https://www.linkedin.com/in/shahyan-khalid" target="_blank" style="color:#00bcd4;">LinkedIn</a>.</p>
+    <p><a href="index.html" style="color:#00bcd4;">← Back to Home</a></p>
+</section>
+
+<footer>
+    <p>&copy; 2025 Muhammad Shahyan Khalid | All Rights Reserved</p>
+</footer>
+
+<script>
+    const sections = document.querySelectorAll('section');
+    const revealOnScroll = () => {
+        const trigger = window.innerHeight * 0.85;
+        sections.forEach(sec => {
+            const top = sec.getBoundingClientRect().top;
+            if (top < trigger) sec.style.opacity = 1;
+        });
+    };
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+</script>
+
+</body>
+</html>
